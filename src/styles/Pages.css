@@ -1,0 +1,177 @@
+/* Common Page Hero */
+
+.page-hero {
+  padding: 90px 20px;
+  text-align: center;
+  background: #f4fff8;
+}
+
+.page-hero h1 {
+  color: #003b1f;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.page-hero p {
+  color: #60756a;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* Common Page Section */
+
+.page-section {
+  padding: 75px 0;
+  background: #ffffff;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Discover Premium Hero */
+
+.discover-hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 40, 20, 0.82),
+      rgba(0, 60, 30, 0.45),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.discover-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.discover-hero .travique-container {
+  position: relative;
+  z-index: 10;
+}
+
+.discover-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  color: white;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.discover-hero h1 {
+  font-size: clamp(58px, 8vw, 110px);
+  line-height: 0.95;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 25px;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.discover-hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+/* Saved Trips Card */
+
+.simple-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e3eee8;
+  box-shadow: 0 12px 35px rgba(0, 59, 31, 0.08);
+}
+
+.simple-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.simple-card div {
+  padding: 20px;
+}
+
+.simple-card h3 {
+  color: #003b1f;
+  margin-bottom: 10px;
+}
+
+.simple-card p {
+  color: #60756a;
+  margin-bottom: 10px;
+}
+
+.simple-card span {
+  color: #00a847;
+  font-weight: 900;
+}
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .discover-hero h1 {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .discover-hero {
+    min-height: 75vh;
+    padding: 70px 0;
+  }
+
+  .discover-hero h1 {
+    font-size: 46px;
+  }
+
+  .discover-hero p {
+    font-size: 17px;
+  }
+
+  .discover-tag {
+    font-size: 14px;
+    padding: 11px 18px;
+  }
+}

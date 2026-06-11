@@ -1,0 +1,173 @@
+.hero-section {
+  padding: 58px 0 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: clamp(46px, 7vw, 76px);
+  font-weight: 900;
+  color: #003b1f;
+  margin-bottom: 34px;
+}
+
+.hero-search {
+  width: min(880px, 92%);
+  min-height: 68px;
+  margin: auto;
+  border: 1px solid #b7beb9;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+}
+
+.search-icon {
+  font-size: 22px;
+  color: #003b1f;
+}
+
+.hero-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 18px;
+  font-size: 17px;
+  color: #003b1f;
+}
+
+.hero-search button {
+  border: none;
+  background: #00eb5e;
+  color: #003b1f;
+  padding: 18px 34px;
+  border-radius: 35px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.hero-banner {
+  margin-top: 72px;
+  background: #00eb5e;
+  border-radius: 16px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.hero-banner-image {
+  min-height: 390px;
+  border-radius: 16px;
+  background-image: linear-gradient(
+      rgba(0, 59, 31, 0.08),
+      rgba(0, 59, 31, 0.08)
+    ),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.floating-card {
+  position: absolute;
+  background: white;
+  color: #003b1f;
+  padding: 14px 18px;
+  border-radius: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 800;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+.top-card {
+  top: 22px;
+  left: 22px;
+}
+
+.bottom-card {
+  bottom: 22px;
+  right: 22px;
+}
+
+.hero-banner-content {
+  color: #003b1f;
+}
+
+.small-tag {
+  display: inline-block;
+  background: #ffffff;
+  padding: 9px 16px;
+  border-radius: 30px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.hero-banner-content h2 {
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 0.95;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.hero-banner-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.hero-banner-content button {
+  border: none;
+  background: #003b1f;
+  color: #ffffff;
+  padding: 17px 34px;
+  border-radius: 35px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .hero-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-search {
+    border-radius: 22px;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .hero-search input {
+    min-width: 220px;
+  }
+
+  .hero-search button {
+    width: 100%;
+  }
+
+  .hero-banner {
+    padding: 18px;
+  }
+
+  .hero-banner-image {
+    min-height: 300px;
+  }
+
+  .floating-card {
+    font-size: 13px;
+  }
+}

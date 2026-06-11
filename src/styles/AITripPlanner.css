@@ -1,0 +1,72 @@
+.ai-planner {
+  padding: 80px 0;
+  background: #f4fff8;
+}
+
+.planner-box {
+  display: grid;
+  gap: 30px;
+}
+
+.planner-box h1 {
+  font-size: 52px;
+  color: #003b1f;
+}
+
+.planner-box p {
+  color: #00a847;
+  font-weight: 900;
+}
+
+.planner-box span {
+  color: #60756a;
+  font-size: 18px;
+}
+
+.planner-box form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.planner-box input,
+.planner-box select {
+  padding: 14px;
+  border: 1px solid #cde8d6;
+  border-radius: 14px;
+}
+
+.planner-box button {
+  border: none;
+  background: #003b1f;
+  color: white;
+  border-radius: 30px;
+  font-weight: 900;
+}
+
+.plan-result {
+  display: grid;
+  gap: 18px;
+}
+
+.plan-result div {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  border: 1px solid #dcefe4;
+}
+
+.plan-result h3 {
+  color: #003b1f;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .planner-box form {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-box button {
+    padding: 14px;
+  }
+}

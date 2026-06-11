@@ -1,0 +1,112 @@
+.travel-showcase {
+  padding: 75px 0;
+  background: #ffffff;
+}
+
+.showcase-block {
+  margin-top: 45px;
+}
+
+.showcase-block h3 {
+  font-size: 30px;
+  color: #003b1f;
+  margin-bottom: 22px;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.showcase-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e3eee8;
+  box-shadow: 0 12px 35px rgba(0, 59, 31, 0.08);
+  transition: 0.3s;
+}
+
+.showcase-card:hover {
+  transform: translateY(-8px);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.showcase-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #003b1f;
+}
+
+.showcase-info {
+  padding: 20px;
+}
+
+.showcase-info h4 {
+  font-size: 21px;
+  color: #003b1f;
+  margin-bottom: 10px;
+}
+
+.showcase-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5d7067;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.showcase-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase-row span {
+  color: #003b1f;
+  font-weight: 900;
+}
+
+.showcase-row svg {
+  color: #00b84f;
+}
+
+.showcase-row b {
+  color: #003b1f;
+}
+
+.showcase-info small {
+  display: inline-block;
+  margin-top: 12px;
+  background: #eafff1;
+  color: #007d35;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+@media (max-width: 950px) {
+  .showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}

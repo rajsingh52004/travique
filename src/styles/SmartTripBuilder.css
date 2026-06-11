@@ -1,0 +1,82 @@
+.smart-builder {
+  padding: 100px 20px;
+  background: #f8fffb;
+}
+
+.smart-builder h1 {
+  text-align: center;
+  color: #003b1f;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.smart-builder p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.builder-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.builder-form input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.builder-form button {
+  border: none;
+  background: #00eb5e;
+  color: #003b1f;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.trip-result {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trip-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.trip-card h3 {
+  color: #003b1f;
+}
+
+.trip-card p {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.total-card {
+  background: #003b1f;
+  color: white;
+}
+
+.total-card h3,
+.total-card p {
+  color: white;
+}
+
+@media(max-width:900px){
+  .builder-form{
+    grid-template-columns:1fr;
+  }
+
+  .trip-result{
+    grid-template-columns:1fr;
+  }
+}

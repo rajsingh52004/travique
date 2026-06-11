@@ -1,0 +1,105 @@
+.destination-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid #e5eee8;
+  box-shadow: 0 15px 45px rgba(0, 59, 31, 0.12);
+  transition: 0.4s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-12px);
+}
+
+.destination-info h3 {
+  font-size: 30px;
+  color: #003b1f;
+  margin-bottom: 12px;
+}
+
+.destination-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.destination-card:hover .destination-img-box img {
+  transform: scale(1.08);
+}
+
+.save-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: #ffffff;
+  color: #003b1f;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  font-size: 17px;
+  display: grid;
+  place-items: center;
+}
+
+.destination-tag {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: #00eb5e;
+  color: #003b1f;
+  font-weight: 900;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.destination-info {
+  padding: 20px;
+}
+
+.destination-info h3 {
+  font-size: 24px;
+  color: #003b1f;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #49675a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-row span {
+  color: #003b1f;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rating-row svg {
+  color: #00b84f;
+}
+
+.rating-row small {
+  color: #6b7f73;
+  font-weight: 600;
+}
+.save-btn.saved {
+  background: #003b1f;
+  color: white;
+}
+.destination-card{
+ cursor:pointer;
+}

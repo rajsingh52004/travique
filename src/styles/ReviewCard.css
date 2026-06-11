@@ -1,0 +1,22 @@
+.review-card {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  border: 1px solid #e3eee8;
+  box-shadow: 0 12px 35px rgba(0, 59, 31, 0.08);
+}
+
+.review-card h3 {
+  color: #003b1f;
+  margin-bottom: 10px;
+}
+
+.review-card span {
+  color: #00a847;
+  font-weight: 900;
+}
+
+.review-card p {
+  margin-top: 12px;
+  color: #60756a;
+}

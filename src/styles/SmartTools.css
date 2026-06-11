@@ -1,0 +1,83 @@
+.smart-tools {
+  padding: 80px 0;
+  background: #f4fff8;
+}
+
+.center {
+  text-align: center;
+}
+
+.tools-grid {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.tool-card {
+  background: white;
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px solid #dff3e7;
+  box-shadow: 0 12px 35px rgba(0, 59, 31, 0.08);
+}
+
+.tool-card > svg {
+  font-size: 36px;
+  color: #00b84f;
+  margin-bottom: 18px;
+}
+
+.tool-card h3 {
+  color: #003b1f;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.tool-card p,
+.tool-card li {
+  color: #5c7166;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.tool-card ul {
+  padding-left: 18px;
+}
+
+.planner-card button {
+  margin-top: 20px;
+  border: none;
+  background: #003b1f;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 25px;
+  font-weight: 900;
+}
+
+.budget-card input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #cce8d5;
+  border-radius: 12px;
+  outline: none;
+}
+
+.budget-card h4 {
+  margin-top: 10px;
+  color: #003b1f;
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

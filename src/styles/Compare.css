@@ -1,0 +1,58 @@
+.compare-page {
+  padding: 100px 20px;
+  background: #f8fffb;
+  min-height: 100vh;
+}
+
+.compare-page h1 {
+  text-align: center;
+  color: #003b1f;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+.compare-selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.compare-selects select {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.compare-table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.compare-row div {
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.compare-row div:first-child {
+  font-weight: 800;
+  color: #003b1f;
+  background: #f4fff8;
+}
+
+@media(max-width:768px) {
+  .compare-selects {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-row {
+    grid-template-columns: 1fr;
+  }
+}

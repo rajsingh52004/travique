@@ -1,0 +1,69 @@
+.mini-card {
+  position: relative;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e3eee8;
+  box-shadow: 0 12px 35px rgba(0, 59, 31, 0.08);
+}
+
+.mini-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.mini-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #003b1f;
+}
+
+.mini-heart.saved {
+  background: #003b1f;
+  color: white;
+}
+
+.mini-info {
+  padding: 20px;
+}
+
+.mini-info h3 {
+  color: #003b1f;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.mini-info p {
+  color: #5d7067;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.mini-info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mini-info span,
+.mini-info b {
+  color: #003b1f;
+  font-weight: 900;
+}
+
+.mini-info small {
+  display: inline-block;
+  margin-top: 12px;
+  background: #eafff1;
+  padding: 7px 12px;
+  border-radius: 20px;
+  color: #007d35;
+  font-weight: 800;
+}
